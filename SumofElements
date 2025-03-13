@@ -1,0 +1,17 @@
+#a Java Program that holds an array called 'Num' . The array should contain 7 elements and your program should display the sum of all the 7  elements of that array. 
+public class Sum
+{
+ public static void main(String[] args)
+{
+int sum=0;
+int[] num = {11,8,4,7,2,6,10};
+for (int i=0; i<num.length; i++)
+{
+sum= sum+num[i];
+}
+System.out.println("Name:Mudalla Suresh");
+System.out.println("Roll number:22NQ1A0557");
+System.out.println("sum is:"+ sum);
+}
+}
+
