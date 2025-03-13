@@ -1,0 +1,28 @@
+#a Java program that prompts the user to enter two integers, N1 and N2. These integers should be passed to a method called printPrimes(), which will display #all the prime numbers within that range. The method should accept parameters and not return any value.
+import java.util.*;
+class prime
+{
+    public static void main(String[] args) 
+    {
+        Scanner v = new Scanner(System.in);
+        System.out.print("Enter the first integer (N1): ");
+        int N1 = v.nextInt();
+        System.out.print("Enter the second integer (N2): ");
+        int N2 = v.nextInt();
+        for (int i=N1;i<N2;i++)
+        {
+            int tgt=i;
+            boolean flag=false;
+            for (int j=2;j<tgt/2;j++)
+            {
+                if(tgt%j==0)
+                {
+                    flag=true;
+                }
+            }
+            if (flag==false){
+                System.out.println(tgt);
+            }
+        }
+}
+}
